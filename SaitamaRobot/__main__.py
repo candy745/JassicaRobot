@@ -6,7 +6,7 @@ from typing import Optional
 from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, telethn, updater)
-# needed to dynamically load modules
+# needed to dynamically load 
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SaitamaRobot.modules import ALL_MODULES
 from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
@@ -26,8 +26,7 @@ Hi {}, my name is {}!
 I am an Anime themed group management bot.
 You can find my list of available commands with /help.
 
-i'm a group manager bot. Maintained by @GarimaQueen
-
+i'm a group manager bot. Maintained by @Kingslayer3199
 """
 
 HELP_STRINGS = """
@@ -52,8 +51,7 @@ And the following:
 SAITAMA_IMG = "https://images.alphacoders.com/679/679719.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars)."""
+There are two ways of supporting him; [PayPal](paypal.me/ruebanprince)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -156,7 +154,7 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([
-                  [InlineKeyboardButton(text="👸 Add Jassica to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
+                  [InlineKeyboardButton(text="Add Beastslayer to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
                   [InlineKeyboardButton(text="Source Code", url="https://github.com/QueenArzoo/ElisaRobot"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")]]))
     else:
         update.effective_message.reply_text("Yo, whadup?")
