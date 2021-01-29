@@ -48,7 +48,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://images.alphacoders.com/679/679719.jpg"
+SAITAMA_IMG = "https://i.ibb.co/TWQCYjY/Dope-732.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 There are two ways of supporting him; [PayPal](paypal.me/ruebanprince)."""
