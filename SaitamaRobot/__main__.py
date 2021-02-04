@@ -23,10 +23,10 @@ from telegram.utils.helpers import escape_markdown
 PM_START_TEXT = """
 
 Hi {}, my name is {}! 
-I am Intelligent group management bot.
+I am group management bot made by candy.
 You can find my list of available commands with /help.
 
-i'm a group manager bot. Maintained by @Kingslayer3199
+i'm a group manager bot. Maintained by @Candy716
 """
 
 HELP_STRINGS = """
@@ -48,10 +48,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://i.ibb.co/TWQCYjY/Dope-732.jpg"
-
+SAITAMA_IMG = "https://i.ibb.co/TWQCYjY/Dope-732.jpg"   
+ 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-There are two ways of supporting him; [PayPal](paypal.me/ruebanprince)."""
+There are two ways of supporting him
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -154,7 +154,7 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([
-                  [InlineKeyboardButton(text="Add Beastslayer to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
+                  [InlineKeyboardButton(text="Add Candy to your group", url="t.me/{}?startgroup=true".format(context.bot.username))],
                   [InlineKeyboardButton(text="❓ Help", callback_data="help_back")]]))
     else:
         update.effective_message.reply_text("Yo, whadup?")
